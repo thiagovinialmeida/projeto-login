@@ -1,10 +1,117 @@
 @charset "UTF-8";
 
+/* Config Geral das Media Queries */
+
 /* Cores para utilizar:
 
 Marrom: #1a1205
 Azul quase ciano: #759798
 Azul claro: #036596 
-
+roxo: #5f2c82
 */
 
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #5f2c82;
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+
+    margin: auto;
+    max-width: 200px;
+    transform: translate(-90px);
+
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+section{
+    padding: 10px;
+}
+
+div#imagem{
+    margin-bottom: 10px;
+}
+
+img{
+    background-image: url('../imagens/estetica-login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    width: 200px;
+    margin: -10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 0.9em;
+    margin: 5px 0px 5px 0px;
+}
+
+i.material-icons{
+    color: whitesmoke;
+    background-color: #5f2c82;
+    display: inline;
+    border-radius: 5px 0px 0px 5px;
+}
+
+input.pessoal{
+    display: inline;
+    height: 20px;
+    margin-bottom: 5px;
+    background-color: #759798;
+    border: 2px solid #5f2c82;
+    border-radius: 0px 5px 5px 0px;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(197, 197, 197);
+}
+
+input.pessoal:hover{
+    background-color: lightgray;
+
+}
+
+input.botoes{
+    display: block;
+    padding: 5px;
+    width: 180px;
+}
+
+input#submit{
+    margin-bottom: 5px;
+    background-color: #759798;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+}
+
+input#recuperar{
+    background-color: white;
+    border: 1px solid #5f2c82;
+    border-radius: 10px;
+}
+
+input#recuperar:hover, input#submit:hover{
+    background-color: lightgray;
+}

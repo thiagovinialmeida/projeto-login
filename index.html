@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <section id="login">
-        <div id="img">
-            Imagem
-        </div>
-        <div id="form">
-            <h1>Login</h1>
-            <p>Seja bem-vindo(a) ao site novamente! Faça login novamente para descobrir novos lugares!</p>
-            <form action="login.php" method="post" autocomplete="on">
-                
-            </form>
-        </div>
-    </section>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <img src="imagens/estetica-login.jpg" alt="Resort">
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) ao site novamente! Faça login novamente para descobrir novos lugares!</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="caixas">
+                        <i class="material-icons">
+                            person
+                        </i>
+                        <input type="email" name="email" id="iemail" class="pessoal" placeholder="Seu email" size="16" required>
+                    </div>
+                    <div class="caixas">
+                        <i class="material-icons">
+                            lock
+                        </i>
+                        <input type="text" name="senha" id="isenha" class="pessoal" placeholder="Sua senha" size="16" required>
+                    </div>
+                    <div>
+                        <input class="botoes" id="submit" type="submit" value="Entrar">
+                        <input class="botoes" id="recuperar" type="button" value="Esqueci a senha">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
