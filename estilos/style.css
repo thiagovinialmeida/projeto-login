@@ -10,6 +10,14 @@ Azul claro: #036596
 roxo: #5f2c82
 */
 
+/*
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+tablet: 768 até 992px
+Descktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
 
 *{
     margin: 0px;
@@ -32,7 +40,8 @@ main{
     top: 20%;
 
     margin: auto;
-    max-width: 200px;
+    max-width: 600px;
+    min-width: 200px;
     transform: translate(-90px);
 
 
@@ -45,16 +54,13 @@ section{
 }
 
 div#imagem{
-    margin-bottom: 10px;
-}
-
-img{
     background-image: url('../imagens/estetica-login.jpg');
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: center left;
-    width: 200px;
-    margin: -10px;
+    background-position: center right;
+    height: 130px;
+    max-width: 600px;
+    margin: -10px -10px 15px -10px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -63,8 +69,9 @@ h1{
 }
 
 p{
+    text-align: justify;
     font-size: 0.9em;
-    margin: 5px 0px 5px 0px;
+    margin: 15px 0px 20px 0px;
 }
 
 i.material-icons{
@@ -95,7 +102,7 @@ input.pessoal:hover{
 input.botoes{
     display: block;
     padding: 5px;
-    width: 180px;
+    min-width: 230px;
 }
 
 input#submit{
