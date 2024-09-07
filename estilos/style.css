@@ -46,25 +46,36 @@ section#login{
     top: 50vh;
 
     margin: auto;
-    max-width: 600px;
-    min-width: 200px;
+    width: 250px;
+    height: 460px;
     transform: translate(-50%, -50%);
 
 
+    display: block;
     background-color: white;
     border-radius: 20px;
     padding: 10px;
+    overflow: hidden;
+
+    transition: width 1s, height 1s;
 }
 
 div#imagem{
+    display: block;
     background-image: url('../imagens/estetica-login.jpg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center right;
-    height: 130px;
+    height: 150px;
     max-width: 600px;
     margin: -10px -10px 15px -10px;
-    border-radius: 20px 20px 0px 0px;
+}
+
+form > div.caixas{
+    width: 100%;
+    background-color: #5f2c82;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 h1{
@@ -77,20 +88,27 @@ p{
     margin: 15px 0px 20px 0px;
 }
 
+div#password{
+    margin-top: 5px;
+}
+
 i.material-icons{
     color: whitesmoke;
     background-color: #5f2c82;
-    display: inline;
-    border-radius: 5px 0px 0px 5px;
+    width: 30px;
+    font-size: 2em;
+    padding: 5px 0px;
 }
 
 input.pessoal{
+    text-indent: 10px;
     display: inline;
-    height: 20px;
-    margin-bottom: 5px;
+    height: 30px;
+    width: calc(100% - 49px);
     background-color: #759798;
     border: 2px solid #5f2c82;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 10px ;
+    transform: translateY(-30%);
 }
 
 ::-webkit-input-placeholder{
@@ -99,13 +117,20 @@ input.pessoal{
 
 input.pessoal:hover{
     background-color: lightgray;
+}
 
+input.pessoal:focus-within{
+    background-color: white;
 }
 
 input.botoes{
     display: block;
-    padding: 5px;
-    min-width: 230px;
+    padding: 10px;
+    width: 100%;
+}
+
+input#submit{
+    margin-top: 10px;
 }
 
 input#submit{
